@@ -1,0 +1,417 @@
+<pre><font color="#8AE234"><b>vboxuser@Ubuntu18</b></font>:<font color="#729FCF"><b>~/ns-3-dev</b></font>$ P=~/5g-network-slicing
+<font color="#8AE234"><b>vboxuser@Ubuntu18</b></font>:<font color="#729FCF"><b>~/ns-3-dev</b></font>$ rm -f $P/results/*.csv
+<font color="#8AE234"><b>vboxuser@Ubuntu18</b></font>:<font color="#729FCF"><b>~/ns-3-dev</b></font>$ ./ns3 run &quot;dynamic-slicing --enableDynamicSlicing=0 --seed=1 --outDir=$P/results --configFile=$P/config/simulation-config.txt&quot;
+[0/2] Re-checking globbed directories...
+ninja: no work to do.
+UE 0 ip=7.0.0.2 slice=eMBB port=5000
+UE 1 ip=7.0.0.3 slice=eMBB port=5000
+UE 2 ip=7.0.0.4 slice=URLLC port=6000
+UE 3 ip=7.0.0.5 slice=URLLC port=6000
+UE 4 ip=7.0.0.6 slice=mMTC port=7000
+UE 5 ip=7.0.0.7 slice=mMTC port=7000
+UE 6 ip=7.0.0.8 slice=mMTC port=7000
+UE 7 ip=7.0.0.9 slice=mMTC port=7000
+UE 8 ip=7.0.0.10 slice=mMTC port=7000
+UE 9 ip=7.0.0.11 slice=mMTC port=7000
+UE 10 ip=7.0.0.12 slice=mMTC port=7000
+UE 11 ip=7.0.0.13 slice=mMTC port=7000
+UE 12 ip=7.0.0.14 slice=mMTC port=7000
+UE 13 ip=7.0.0.15 slice=mMTC port=7000
+mode=static seed=1 simTime=50 capacity=50 Mbps
+[t=    0s]  eMBB offered=  10.002 Mbps  tput=  10.179 Mbps  lat=    2.69 ms  loss=   0.22 %  share=  60.0 %  qos=1
+[t=    0s] URLLC offered=   0.101 Mbps  tput=   0.129 Mbps  lat=    2.61 ms  loss=   0.00 %  share=  30.0 %  qos=1
+[t=    0s]  mMTC offered=   0.050 Mbps  tput=   0.065 Mbps  lat=    2.85 ms  loss=   0.00 %  share=  10.0 %  qos=1
+[t=    1s]  eMBB offered=  10.002 Mbps  tput=  10.202 Mbps  lat=    2.67 ms  loss=   0.00 %  share=  60.0 %  qos=1
+[t=    1s] URLLC offered=   0.099 Mbps  tput=   0.127 Mbps  lat=    2.56 ms  loss=   0.00 %  share=  30.0 %  qos=1
+[t=    1s]  mMTC offered=   0.052 Mbps  tput=   0.065 Mbps  lat=    2.47 ms  loss=   3.08 %  share=  10.0 %  qos=1
+[t=    2s]  eMBB offered=  10.002 Mbps  tput=  10.190 Mbps  lat=    2.67 ms  loss=   0.11 %  share=  60.0 %  qos=1
+[t=    2s] URLLC offered=   0.101 Mbps  tput=   0.129 Mbps  lat=    2.56 ms  loss=   0.00 %  share=  30.0 %  qos=1
+[t=    2s]  mMTC offered=   0.050 Mbps  tput=   0.066 Mbps  lat=    2.48 ms  loss=   0.00 %  share=  10.0 %  qos=1
+[t=    3s]  eMBB offered=  10.002 Mbps  tput=  10.202 Mbps  lat=    2.67 ms  loss=   0.00 %  share=  60.0 %  qos=1
+[t=    3s] URLLC offered=   0.099 Mbps  tput=   0.127 Mbps  lat=    2.56 ms  loss=   0.00 %  share=  30.0 %  qos=1
+[t=    3s]  mMTC offered=   0.048 Mbps  tput=   0.061 Mbps  lat=    2.47 ms  loss=   0.00 %  share=  10.0 %  qos=1
+[t=    4s]  eMBB offered=   9.990 Mbps  tput=  10.202 Mbps  lat=    2.67 ms  loss=   0.00 %  share=  60.0 %  qos=1
+[t=    4s] URLLC offered=   0.101 Mbps  tput=   0.129 Mbps  lat=    2.56 ms  loss=   0.00 %  share=  30.0 %  qos=1
+[t=    4s]  mMTC offered=   0.050 Mbps  tput=   0.065 Mbps  lat=    2.46 ms  loss=   0.00 %  share=  10.0 %  qos=1
+[t=    5s]  eMBB offered=  10.002 Mbps  tput=  10.202 Mbps  lat=    2.67 ms  loss=   0.00 %  share=  60.0 %  qos=1
+[t=    5s] URLLC offered=   0.099 Mbps  tput=   0.127 Mbps  lat=    2.56 ms  loss=   0.00 %  share=  30.0 %  qos=1
+[t=    5s]  mMTC offered=   0.052 Mbps  tput=   0.065 Mbps  lat=    2.47 ms  loss=   3.08 %  share=  10.0 %  qos=1
+[t=    6s]  eMBB offered=  10.002 Mbps  tput=  10.202 Mbps  lat=    2.67 ms  loss=   0.00 %  share=  60.0 %  qos=1
+[t=    6s] URLLC offered=   0.101 Mbps  tput=   0.129 Mbps  lat=    2.56 ms  loss=   0.00 %  share=  30.0 %  qos=1
+[t=    6s]  mMTC offered=   0.050 Mbps  tput=   0.066 Mbps  lat=    2.47 ms  loss=   0.00 %  share=  10.0 %  qos=1
+[t=    7s]  eMBB offered=  10.002 Mbps  tput=  10.202 Mbps  lat=    2.67 ms  loss=   0.00 %  share=  60.0 %  qos=1
+[t=    7s] URLLC offered=   0.099 Mbps  tput=   0.127 Mbps  lat=    2.56 ms  loss=   0.00 %  share=  30.0 %  qos=1
+[t=    7s]  mMTC offered=   0.048 Mbps  tput=   0.061 Mbps  lat=    2.47 ms  loss=   0.00 %  share=  10.0 %  qos=1
+[t=    8s]  eMBB offered=  10.002 Mbps  tput=  10.202 Mbps  lat=    2.67 ms  loss=   0.00 %  share=  60.0 %  qos=1
+[t=    8s] URLLC offered=   0.101 Mbps  tput=   0.129 Mbps  lat=    2.56 ms  loss=   0.00 %  share=  30.0 %  qos=1
+[t=    8s]  mMTC offered=   0.050 Mbps  tput=   0.065 Mbps  lat=    2.47 ms  loss=   0.00 %  share=  10.0 %  qos=1
+[t=    9s]  eMBB offered=  10.002 Mbps  tput=  10.190 Mbps  lat=    2.67 ms  loss=   0.11 %  share=  60.0 %  qos=1
+[t=    9s] URLLC offered=   0.099 Mbps  tput=   0.127 Mbps  lat=    2.56 ms  loss=   0.00 %  share=  30.0 %  qos=1
+[t=    9s]  mMTC offered=   0.052 Mbps  tput=   0.065 Mbps  lat=    2.47 ms  loss=   3.08 %  share=  10.0 %  qos=1
+[t=   10s]  eMBB offered=  50.019 Mbps  tput=  30.788 Mbps  lat=    3.12 ms  loss=  39.66 %  share=  60.0 %  qos=0
+[t=   10s] URLLC offered=   0.101 Mbps  tput=   0.129 Mbps  lat=    2.99 ms  loss=   0.00 %  share=  30.0 %  qos=1
+[t=   10s]  mMTC offered=   0.056 Mbps  tput=   0.074 Mbps  lat=    2.98 ms  loss=   0.00 %  share=  10.0 %  qos=1
+i[t=   11s]  eMBB offered=  49.997 Mbps  tput=  30.616 Mbps  lat=    2.98 ms  loss=  39.96 %  share=  60.0 %  qos=0
+[t=   11s] URLLC offered=   0.099 Mbps  tput=   0.127 Mbps  lat=    3.00 ms  loss=   0.00 %  share=  30.0 %  qos=1
+[t=   11s]  mMTC offered=   0.048 Mbps  tput=   0.061 Mbps  lat=    3.00 ms  loss=   0.00 %  share=  10.0 %  qos=1
+[t=   12s]  eMBB offered=  49.997 Mbps  tput=  30.593 Mbps  lat=    2.98 ms  loss=  40.01 %  share=  60.0 %  qos=0
+[t=   12s] URLLC offered=   0.101 Mbps  tput=   0.129 Mbps  lat=    3.00 ms  loss=   0.00 %  share=  30.0 %  qos=1
+[t=   12s]  mMTC offered=   0.048 Mbps  tput=   0.061 Mbps  lat=    2.99 ms  loss=   0.00 %  share=  10.0 %  qos=1
+[t=   13s]  eMBB offered=  49.997 Mbps  tput=  30.582 Mbps  lat=    2.98 ms  loss=  40.03 %  share=  60.0 %  qos=0
+[t=   13s] URLLC offered=   0.099 Mbps  tput=   0.127 Mbps  lat=    3.00 ms  loss=   0.00 %  share=  30.0 %  qos=1
+[t=   13s]  mMTC offered=   0.048 Mbps  tput=   0.061 Mbps  lat=    3.00 ms  loss=   0.00 %  share=  10.0 %  qos=1
+[t=   14s]  eMBB offered=  49.997 Mbps  tput=  30.628 Mbps  lat=    2.98 ms  loss=  39.94 %  share=  60.0 %  qos=0
+[t=   14s] URLLC offered=   0.101 Mbps  tput=   0.129 Mbps  lat=    2.99 ms  loss=   0.00 %  share=  30.0 %  qos=1
+[t=   14s]  mMTC offered=   0.056 Mbps  tput=   0.072 Mbps  lat=    2.99 ms  loss=   0.00 %  share=  10.0 %  qos=1
+[t=   15s]  eMBB offered=  49.997 Mbps  tput=  30.582 Mbps  lat=    2.98 ms  loss=  40.03 %  share=  60.0 %  qos=0
+[t=   15s] URLLC offered=   0.099 Mbps  tput=   0.127 Mbps  lat=    3.00 ms  loss=   0.00 %  share=  30.0 %  qos=1
+[t=   15s]  mMTC offered=   0.048 Mbps  tput=   0.061 Mbps  lat=    2.99 ms  loss=   0.00 %  share=  10.0 %  qos=1
+[t=   16s]  eMBB offered=  49.997 Mbps  tput=  30.616 Mbps  lat=    2.98 ms  loss=  39.96 %  share=  60.0 %  qos=0
+[t=   16s] URLLC offered=   0.101 Mbps  tput=   0.129 Mbps  lat=    3.00 ms  loss=   0.00 %  share=  30.0 %  qos=1
+[t=   16s]  mMTC offered=   0.048 Mbps  tput=   0.061 Mbps  lat=    3.00 ms  loss=   0.00 %  share=  10.0 %  qos=1
+[t=   17s]  eMBB offered=  50.019 Mbps  tput=  30.582 Mbps  lat=    2.98 ms  loss=  40.06 %  share=  60.0 %  qos=0
+[t=   17s] URLLC offered=   0.099 Mbps  tput=   0.127 Mbps  lat=    3.00 ms  loss=   0.00 %  share=  30.0 %  qos=1
+[t=   17s]  mMTC offered=   0.048 Mbps  tput=   0.061 Mbps  lat=    3.00 ms  loss=   0.00 %  share=  10.0 %  qos=1
+[t=   18s]  eMBB offered=  49.997 Mbps  tput=  30.616 Mbps  lat=    2.98 ms  loss=  39.96 %  share=  60.0 %  qos=0
+[t=   18s] URLLC offered=   0.101 Mbps  tput=   0.129 Mbps  lat=    2.99 ms  loss=   0.00 %  share=  30.0 %  qos=1
+[t=   18s]  mMTC offered=   0.056 Mbps  tput=   0.072 Mbps  lat=    2.99 ms  loss=   0.00 %  share=  10.0 %  qos=1
+[t=   19s]  eMBB offered=  49.997 Mbps  tput=  30.593 Mbps  lat=    2.98 ms  loss=  40.01 %  share=  60.0 %  qos=0
+[t=   19s] URLLC offered=   0.099 Mbps  tput=   0.127 Mbps  lat=    3.00 ms  loss=   0.00 %  share=  30.0 %  qos=1
+[t=   19s]  mMTC offered=   0.048 Mbps  tput=   0.061 Mbps  lat=    2.99 ms  loss=   0.00 %  share=  10.0 %  qos=1
+[t=   20s]  eMBB offered=  50.019 Mbps  tput=  26.641 Mbps  lat=    5.35 ms  loss=  47.78 %  share=  60.0 %  qos=0
+[t=   20s] URLLC offered=   5.000 Mbps  tput=   6.384 Mbps  lat=    2.79 ms  loss=   0.26 %  share=  30.0 %  qos=1
+[t=   20s]  mMTC offered=   0.056 Mbps  tput=   0.072 Mbps  lat=    3.00 ms  loss=   0.00 %  share=  10.0 %  qos=1
+[t=   21s]  eMBB offered=  49.997 Mbps  tput=  26.629 Mbps  lat=    5.39 ms  loss=  47.78 %  share=  60.0 %  qos=0
+[t=   21s] URLLC offered=   5.000 Mbps  tput=   6.400 Mbps  lat=    2.79 ms  loss=   0.00 %  share=  30.0 %  qos=1
+[t=   21s]  mMTC offered=   0.048 Mbps  tput=   0.061 Mbps  lat=    2.99 ms  loss=   0.00 %  share=  10.0 %  qos=1
+[t=   22s]  eMBB offered=  49.997 Mbps  tput=  26.641 Mbps  lat=    5.38 ms  loss=  47.76 %  share=  60.0 %  qos=0
+[t=   22s] URLLC offered=   5.000 Mbps  tput=   6.400 Mbps  lat=    2.79 ms  loss=   0.00 %  share=  30.0 %  qos=1
+[t=   22s]  mMTC offered=   0.048 Mbps  tput=   0.061 Mbps  lat=    3.00 ms  loss=   0.00 %  share=  10.0 %  qos=1
+[t=   23s]  eMBB offered=  49.997 Mbps  tput=  26.641 Mbps  lat=    5.39 ms  loss=  47.76 %  share=  60.0 %  qos=0
+[t=   23s] URLLC offered=   5.000 Mbps  tput=   6.400 Mbps  lat=    2.79 ms  loss=   0.00 %  share=  30.0 %  qos=1
+[t=   23s]  mMTC offered=   0.048 Mbps  tput=   0.061 Mbps  lat=    2.99 ms  loss=   0.00 %  share=  10.0 %  qos=1
+[t=   24s]  eMBB offered=  49.997 Mbps  tput=  26.629 Mbps  lat=    5.38 ms  loss=  47.78 %  share=  60.0 %  qos=0
+[t=   24s] URLLC offered=   5.000 Mbps  tput=   6.400 Mbps  lat=    2.79 ms  loss=   0.00 %  share=  30.0 %  qos=1
+[t=   24s]  mMTC offered=   0.056 Mbps  tput=   0.072 Mbps  lat=    2.99 ms  loss=   0.00 %  share=  10.0 %  qos=1
+[t=   25s]  eMBB offered=  49.997 Mbps  tput=  26.641 Mbps  lat=    5.39 ms  loss=  47.76 %  share=  60.0 %  qos=0
+[t=   25s] URLLC offered=   5.000 Mbps  tput=   6.400 Mbps  lat=    2.79 ms  loss=   0.00 %  share=  30.0 %  qos=1
+[t=   25s]  mMTC offered=   0.048 Mbps  tput=   0.061 Mbps  lat=    3.00 ms  loss=   0.00 %  share=  10.0 %  qos=1
+[t=   26s]  eMBB offered=  49.997 Mbps  tput=  26.629 Mbps  lat=    5.37 ms  loss=  47.78 %  share=  60.0 %  qos=0
+[t=   26s] URLLC offered=   5.000 Mbps  tput=   6.400 Mbps  lat=    2.79 ms  loss=   0.00 %  share=  30.0 %  qos=1
+[t=   26s]  mMTC offered=   0.048 Mbps  tput=   0.061 Mbps  lat=    3.00 ms  loss=   0.00 %  share=  10.0 %  qos=1
+[t=   27s]  eMBB offered=  50.019 Mbps  tput=  26.641 Mbps  lat=    5.39 ms  loss=  47.78 %  share=  60.0 %  qos=0
+[t=   27s] URLLC offered=   5.000 Mbps  tput=   6.400 Mbps  lat=    2.79 ms  loss=   0.00 %  share=  30.0 %  qos=1
+[t=   27s]  mMTC offered=   0.048 Mbps  tput=   0.061 Mbps  lat=    2.99 ms  loss=   0.00 %  share=  10.0 %  qos=1
+[t=   28s]  eMBB offered=  49.997 Mbps  tput=  26.618 Mbps  lat=    5.38 ms  loss=  47.80 %  share=  60.0 %  qos=0
+[t=   28s] URLLC offered=   5.000 Mbps  tput=   6.400 Mbps  lat=    2.79 ms  loss=   0.00 %  share=  30.0 %  qos=1
+[t=   28s]  mMTC offered=   0.056 Mbps  tput=   0.072 Mbps  lat=    2.99 ms  loss=   0.00 %  share=  10.0 %  qos=1
+[t=   29s]  eMBB offered=  49.997 Mbps  tput=  26.652 Mbps  lat=    5.39 ms  loss=  47.74 %  share=  60.0 %  qos=0
+[t=   29s] URLLC offered=   5.000 Mbps  tput=   6.400 Mbps  lat=    2.79 ms  loss=   0.00 %  share=  30.0 %  qos=1
+[t=   29s]  mMTC offered=   0.048 Mbps  tput=   0.061 Mbps  lat=    3.00 ms  loss=   0.00 %  share=  10.0 %  qos=1
+[t=   30s]  eMBB offered=  20.003 Mbps  tput=  17.684 Mbps  lat=   10.80 ms  loss=  13.33 %  share=  60.0 %  qos=0
+[t=   30s] URLLC offered=   5.000 Mbps  tput=   6.402 Mbps  lat=    2.77 ms  loss=   0.00 %  share=  30.0 %  qos=1
+[t=   30s]  mMTC offered=   5.000 Mbps  tput=   6.388 Mbps  lat=    2.84 ms  loss=   0.19 %  share=  10.0 %  qos=1
+[t=   31s]  eMBB offered=  20.003 Mbps  tput=  17.684 Mbps  lat=   10.94 ms  loss=  13.33 %  share=  60.0 %  qos=0
+[t=   31s] URLLC offered=   5.000 Mbps  tput=   6.400 Mbps  lat=    2.77 ms  loss=   0.00 %  share=  30.0 %  qos=1
+[t=   31s]  mMTC offered=   5.000 Mbps  tput=   6.400 Mbps  lat=    2.84 ms  loss=   0.00 %  share=  10.0 %  qos=1
+[t=   32s]  eMBB offered=  20.003 Mbps  tput=  17.684 Mbps  lat=   10.95 ms  loss=  13.33 %  share=  60.0 %  qos=0
+[t=   32s] URLLC offered=   5.000 Mbps  tput=   6.400 Mbps  lat=    2.77 ms  loss=   0.00 %  share=  30.0 %  qos=1
+[t=   32s]  mMTC offered=   5.000 Mbps  tput=   6.400 Mbps  lat=    2.84 ms  loss=   0.00 %  share=  10.0 %  qos=1
+[t=   33s]  eMBB offered=  20.003 Mbps  tput=  17.684 Mbps  lat=   10.94 ms  loss=  13.33 %  share=  60.0 %  qos=0
+[t=   33s] URLLC offered=   5.000 Mbps  tput=   6.400 Mbps  lat=    2.77 ms  loss=   0.00 %  share=  30.0 %  qos=1
+[t=   33s]  mMTC offered=   5.000 Mbps  tput=   6.400 Mbps  lat=    2.84 ms  loss=   0.00 %  share=  10.0 %  qos=1
+[t=   34s]  eMBB offered=  20.003 Mbps  tput=  17.673 Mbps  lat=   10.93 ms  loss=  13.38 %  share=  60.0 %  qos=0
+[t=   34s] URLLC offered=   5.000 Mbps  tput=   6.400 Mbps  lat=    2.77 ms  loss=   0.00 %  share=  30.0 %  qos=1
+[t=   34s]  mMTC offered=   5.000 Mbps  tput=   6.400 Mbps  lat=    2.84 ms  loss=   0.00 %  share=  10.0 %  qos=1
+[t=   35s]  eMBB offered=  20.003 Mbps  tput=  17.673 Mbps  lat=   10.95 ms  loss=  13.38 %  share=  60.0 %  qos=0
+[t=   35s] URLLC offered=   5.000 Mbps  tput=   6.400 Mbps  lat=    2.77 ms  loss=   0.00 %  share=  30.0 %  qos=1
+[t=   35s]  mMTC offered=   5.000 Mbps  tput=   6.400 Mbps  lat=    2.84 ms  loss=   0.00 %  share=  10.0 %  qos=1
+[t=   36s]  eMBB offered=  19.981 Mbps  tput=  17.684 Mbps  lat=   10.94 ms  loss=  13.23 %  share=  60.0 %  qos=0
+[t=   36s] URLLC offered=   5.000 Mbps  tput=   6.400 Mbps  lat=    2.77 ms  loss=   0.00 %  share=  30.0 %  qos=1
+[t=   36s]  mMTC offered=   5.000 Mbps  tput=   6.400 Mbps  lat=    2.84 ms  loss=   0.00 %  share=  10.0 %  qos=1
+[t=   37s]  eMBB offered=  20.003 Mbps  tput=  17.684 Mbps  lat=   10.95 ms  loss=  13.33 %  share=  60.0 %  qos=0
+[t=   37s] URLLC offered=   5.000 Mbps  tput=   6.400 Mbps  lat=    2.77 ms  loss=   0.00 %  share=  30.0 %  qos=1
+[t=   37s]  mMTC offered=   5.000 Mbps  tput=   6.400 Mbps  lat=    2.84 ms  loss=   0.00 %  share=  10.0 %  qos=1
+[t=   38s]  eMBB offered=  20.003 Mbps  tput=  17.684 Mbps  lat=   10.94 ms  loss=  13.33 %  share=  60.0 %  qos=0
+[t=   38s] URLLC offered=   5.000 Mbps  tput=   6.400 Mbps  lat=    2.77 ms  loss=   0.00 %  share=  30.0 %  qos=1
+[t=   38s]  mMTC offered=   5.000 Mbps  tput=   6.400 Mbps  lat=    2.84 ms  loss=   0.00 %  share=  10.0 %  qos=1
+[t=   39s]  eMBB offered=  20.003 Mbps  tput=  17.673 Mbps  lat=   10.94 ms  loss=  13.38 %  share=  60.0 %  qos=0
+[t=   39s] URLLC offered=   5.000 Mbps  tput=   6.400 Mbps  lat=    2.77 ms  loss=   0.00 %  share=  30.0 %  qos=1
+[t=   39s]  mMTC offered=   5.000 Mbps  tput=   6.400 Mbps  lat=    2.84 ms  loss=   0.00 %  share=  10.0 %  qos=1
+[t=   40s]  eMBB offered=  80.013 Mbps  tput=  12.224 Mbps  lat=    8.99 ms  loss=  85.02 %  share=  60.0 %  qos=0
+[t=   40s] URLLC offered=  10.000 Mbps  tput=  12.778 Mbps  lat=    3.02 ms  loss=   0.17 %  share=  30.0 %  qos=1
+[t=   40s]  mMTC offered=  10.000 Mbps  tput=   6.519 Mbps  lat=    2.74 ms  loss=  49.07 %  share=  10.0 %  qos=0
+[t=   41s]  eMBB offered=  79.990 Mbps  tput=  12.304 Mbps  lat=    8.77 ms  loss=  84.92 %  share=  60.0 %  qos=0
+[t=   41s] URLLC offered=  10.000 Mbps  tput=  12.800 Mbps  lat=    2.84 ms  loss=   0.00 %  share=  30.0 %  qos=1
+[t=   41s]  mMTC offered=  10.000 Mbps  tput=   6.400 Mbps  lat=    2.74 ms  loss=  50.00 %  share=  10.0 %  qos=0
+[t=   42s]  eMBB offered=  80.013 Mbps  tput=  12.315 Mbps  lat=    8.76 ms  loss=  84.91 %  share=  60.0 %  qos=0
+[t=   42s] URLLC offered=  10.000 Mbps  tput=  12.800 Mbps  lat=    2.84 ms  loss=   0.00 %  share=  30.0 %  qos=1
+[t=   42s]  mMTC offered=  10.000 Mbps  tput=   6.400 Mbps  lat=    2.74 ms  loss=  50.00 %  share=  10.0 %  qos=0
+[t=   43s]  eMBB offered=  79.990 Mbps  tput=  12.304 Mbps  lat=    8.75 ms  loss=  84.92 %  share=  60.0 %  qos=0
+[t=   43s] URLLC offered=  10.000 Mbps  tput=  12.800 Mbps  lat=    2.84 ms  loss=   0.00 %  share=  30.0 %  qos=1
+[t=   43s]  mMTC offered=  10.000 Mbps  tput=   6.400 Mbps  lat=    2.74 ms  loss=  50.00 %  share=  10.0 %  qos=0
+[t=   44s]  eMBB offered=  80.013 Mbps  tput=  12.304 Mbps  lat=    8.76 ms  loss=  84.92 %  share=  60.0 %  qos=0
+[t=   44s] URLLC offered=  10.000 Mbps  tput=  12.800 Mbps  lat=    2.84 ms  loss=   0.00 %  share=  30.0 %  qos=1
+[t=   44s]  mMTC offered=  10.000 Mbps  tput=   6.400 Mbps  lat=    2.74 ms  loss=  50.00 %  share=  10.0 %  qos=0
+[t=   45s]  eMBB offered=  79.990 Mbps  tput=  12.315 Mbps  lat=    8.77 ms  loss=  84.91 %  share=  60.0 %  qos=0
+[t=   45s] URLLC offered=  10.000 Mbps  tput=  12.800 Mbps  lat=    2.84 ms  loss=   0.00 %  share=  30.0 %  qos=1
+[t=   45s]  mMTC offered=  10.000 Mbps  tput=   6.400 Mbps  lat=    2.74 ms  loss=  50.00 %  share=  10.0 %  qos=0
+[t=   46s]  eMBB offered=  79.990 Mbps  tput=  12.304 Mbps  lat=    8.76 ms  loss=  84.92 %  share=  60.0 %  qos=0
+[t=   46s] URLLC offered=  10.000 Mbps  tput=  12.800 Mbps  lat=    2.84 ms  loss=   0.00 %  share=  30.0 %  qos=1
+[t=   46s]  mMTC offered=  10.000 Mbps  tput=   6.400 Mbps  lat=    2.74 ms  loss=  50.00 %  share=  10.0 %  qos=0
+[t=   47s]  eMBB offered=  80.013 Mbps  tput=  12.304 Mbps  lat=    8.75 ms  loss=  84.92 %  share=  60.0 %  qos=0
+[t=   47s] URLLC offered=  10.000 Mbps  tput=  12.800 Mbps  lat=    2.84 ms  loss=   0.00 %  share=  30.0 %  qos=1
+[t=   47s]  mMTC offered=  10.000 Mbps  tput=   6.400 Mbps  lat=    2.74 ms  loss=  50.00 %  share=  10.0 %  qos=0
+[t=   48s]  eMBB offered=  79.990 Mbps  tput=  12.304 Mbps  lat=    8.76 ms  loss=  84.92 %  share=  60.0 %  qos=0
+[t=   48s] URLLC offered=  10.000 Mbps  tput=  12.800 Mbps  lat=    2.84 ms  loss=   0.00 %  share=  30.0 %  qos=1
+[t=   48s]  mMTC offered=  10.000 Mbps  tput=   6.400 Mbps  lat=    2.74 ms  loss=  50.00 %  share=  10.0 %  qos=0
+[t=   49s]  eMBB offered=  80.013 Mbps  tput=  12.315 Mbps  lat=    8.77 ms  loss=  84.91 %  share=  60.0 %  qos=0
+[t=   49s] URLLC offered=  10.000 Mbps  tput=  12.800 Mbps  lat=    2.84 ms  loss=   0.00 %  share=  30.0 %  qos=1
+[t=   49s]  mMTC offered=  10.000 Mbps  tput=   6.400 Mbps  lat=    2.74 ms  loss=  50.00 %  share=  10.0 %  qos=0
+
+===== SUMMARY (static, seed 1) =====
+eMBB: tput=19.487 Mbps lat=5.78 ms loss=54.51 % jitter=0.298 ms offered=187505 pkts policed=80258 rx=85288 avgShare=60.0 % qos=0.200
+URLLC: tput=5.170 Mbps lat=2.82 ms loss=0.01 % jitter=0.225 ms offered=252500 pkts policed=0 rx=252465 avgShare=30.0 % qos=1.000
+mMTC: tput=2.601 Mbps lat=2.79 ms loss=32.95 % jitter=0.201 ms offered=189388 pkts policed=62381 rx=126992 avgShare=10.0 % qos=0.800
+
+Per-UE sink check (bytes received):
+  sink 0 (eMBB): 29750000 B
+  sink 1 (eMBB): 91161000 B
+  sink 2 (URLLC): 13248500 B
+  sink 3 (URLLC): 13248000 B
+  sink 4 (mMTC): 2018500 B
+  sink 5 (mMTC): 646300 B
+  sink 6 (mMTC): 2018500 B
+  sink 7 (mMTC): 2018600 B
+  sink 8 (mMTC): 646300 B
+  sink 9 (mMTC): 2018600 B
+  sink 10 (mMTC): 646300 B
+  sink 11 (mMTC): 646300 B
+  sink 12 (mMTC): 646300 B
+  sink 13 (mMTC): 2018500 B
+<font color="#8AE234"><b>vboxuser@Ubuntu18</b></font>:<font color="#729FCF"><b>~/ns-3-dev</b></font>$ ./ns3 run &quot;dynamic-slicing --enableDynamicSlicing=1 --seed=1 --outDir=$P/results --configFile=$P/config/simulation-config.txt&quot;
+[0/2] Re-checking globbed directories...
+ninja: no work to do.
+UE 0 ip=7.0.0.2 slice=eMBB port=5000
+UE 1 ip=7.0.0.3 slice=eMBB port=5000
+UE 2 ip=7.0.0.4 slice=URLLC port=6000
+UE 3 ip=7.0.0.5 slice=URLLC port=6000
+UE 4 ip=7.0.0.6 slice=mMTC port=7000
+UE 5 ip=7.0.0.7 slice=mMTC port=7000
+UE 6 ip=7.0.0.8 slice=mMTC port=7000
+UE 7 ip=7.0.0.9 slice=mMTC port=7000
+UE 8 ip=7.0.0.10 slice=mMTC port=7000
+UE 9 ip=7.0.0.11 slice=mMTC port=7000
+UE 10 ip=7.0.0.12 slice=mMTC port=7000
+UE 11 ip=7.0.0.13 slice=mMTC port=7000
+UE 12 ip=7.0.0.14 slice=mMTC port=7000
+UE 13 ip=7.0.0.15 slice=mMTC port=7000
+mode=dynamic seed=1 simTime=50 capacity=50 Mbps
+[t=    0s]  eMBB offered=  10.002 Mbps  tput=  10.179 Mbps  lat=    2.69 ms  loss=   0.22 %  share=  60.0 %  qos=1
+[t=    0s] URLLC offered=   0.101 Mbps  tput=   0.129 Mbps  lat=    2.61 ms  loss=   0.00 %  share=  30.0 %  qos=1
+[t=    0s]  mMTC offered=   0.050 Mbps  tput=   0.065 Mbps  lat=    2.85 ms  loss=   0.00 %  share=  10.0 %  qos=1
+[t=    1s]  eMBB offered=  10.002 Mbps  tput=  10.202 Mbps  lat=    2.67 ms  loss=   0.00 %  share=  61.5 %  qos=1
+[t=    1s] URLLC offered=   0.099 Mbps  tput=   0.127 Mbps  lat=    2.56 ms  loss=   0.00 %  share=  25.6 %  qos=1
+[t=    1s]  mMTC offered=   0.052 Mbps  tput=   0.065 Mbps  lat=    2.47 ms  loss=   3.08 %  share=  12.8 %  qos=1
+[t=    2s]  eMBB offered=  10.002 Mbps  tput=  10.190 Mbps  lat=    2.67 ms  loss=   0.11 %  share=  61.5 %  qos=1
+[t=    2s] URLLC offered=   0.101 Mbps  tput=   0.129 Mbps  lat=    2.56 ms  loss=   0.00 %  share=  25.6 %  qos=1
+[t=    2s]  mMTC offered=   0.050 Mbps  tput=   0.066 Mbps  lat=    2.48 ms  loss=   0.00 %  share=  12.8 %  qos=1
+[t=    3s]  eMBB offered=  10.002 Mbps  tput=  10.202 Mbps  lat=    2.67 ms  loss=   0.00 %  share=  61.5 %  qos=1
+[t=    3s] URLLC offered=   0.099 Mbps  tput=   0.127 Mbps  lat=    2.56 ms  loss=   0.00 %  share=  25.6 %  qos=1
+[t=    3s]  mMTC offered=   0.048 Mbps  tput=   0.061 Mbps  lat=    2.47 ms  loss=   0.00 %  share=  12.8 %  qos=1
+[t=    4s]  eMBB offered=   9.990 Mbps  tput=  10.202 Mbps  lat=    2.67 ms  loss=   0.00 %  share=  61.5 %  qos=1
+[t=    4s] URLLC offered=   0.101 Mbps  tput=   0.129 Mbps  lat=    2.56 ms  loss=   0.00 %  share=  25.6 %  qos=1
+[t=    4s]  mMTC offered=   0.050 Mbps  tput=   0.065 Mbps  lat=    2.46 ms  loss=   0.00 %  share=  12.8 %  qos=1
+[t=    5s]  eMBB offered=  10.002 Mbps  tput=  10.202 Mbps  lat=    2.67 ms  loss=   0.00 %  share=  61.5 %  qos=1
+[t=    5s] URLLC offered=   0.099 Mbps  tput=   0.127 Mbps  lat=    2.56 ms  loss=   0.00 %  share=  25.7 %  qos=1
+[t=    5s]  mMTC offered=   0.052 Mbps  tput=   0.065 Mbps  lat=    2.47 ms  loss=   3.08 %  share=  12.8 %  qos=1
+[t=    6s]  eMBB offered=  10.002 Mbps  tput=  10.202 Mbps  lat=    2.67 ms  loss=   0.00 %  share=  61.5 %  qos=1
+[t=    6s] URLLC offered=   0.101 Mbps  tput=   0.129 Mbps  lat=    2.56 ms  loss=   0.00 %  share=  25.6 %  qos=1
+[t=    6s]  mMTC offered=   0.050 Mbps  tput=   0.066 Mbps  lat=    2.47 ms  loss=   0.00 %  share=  12.8 %  qos=1
+[t=    7s]  eMBB offered=  10.002 Mbps  tput=  10.202 Mbps  lat=    2.67 ms  loss=   0.00 %  share=  61.5 %  qos=1
+[t=    7s] URLLC offered=   0.099 Mbps  tput=   0.127 Mbps  lat=    2.56 ms  loss=   0.00 %  share=  25.6 %  qos=1
+[t=    7s]  mMTC offered=   0.048 Mbps  tput=   0.061 Mbps  lat=    2.47 ms  loss=   0.00 %  share=  12.8 %  qos=1
+[t=    8s]  eMBB offered=  10.002 Mbps  tput=  10.202 Mbps  lat=    2.67 ms  loss=   0.00 %  share=  61.5 %  qos=1
+[t=    8s] URLLC offered=   0.101 Mbps  tput=   0.129 Mbps  lat=    2.56 ms  loss=   0.00 %  share=  25.6 %  qos=1
+[t=    8s]  mMTC offered=   0.050 Mbps  tput=   0.065 Mbps  lat=    2.47 ms  loss=   0.00 %  share=  12.8 %  qos=1
+[t=    9s]  eMBB offered=  10.002 Mbps  tput=  10.190 Mbps  lat=    2.67 ms  loss=   0.11 %  share=  61.5 %  qos=1
+[t=    9s] URLLC offered=   0.099 Mbps  tput=   0.127 Mbps  lat=    2.56 ms  loss=   0.00 %  share=  25.6 %  qos=1
+[t=    9s]  mMTC offered=   0.052 Mbps  tput=   0.065 Mbps  lat=    2.47 ms  loss=   3.08 %  share=  12.8 %  qos=1
+[t=   10s]  eMBB offered=  50.019 Mbps  tput=  31.565 Mbps  lat=    3.17 ms  loss=  38.13 %  share=  61.5 %  qos=0
+[t=   10s] URLLC offered=   0.101 Mbps  tput=   0.129 Mbps  lat=    2.99 ms  loss=   0.00 %  share=  25.6 %  qos=1
+[t=   10s]  mMTC offered=   0.056 Mbps  tput=   0.074 Mbps  lat=    2.98 ms  loss=   0.00 %  share=  12.8 %  qos=1
+[t=   11s]  eMBB offered=  49.997 Mbps  tput=  35.860 Mbps  lat=    4.58 ms  loss=  29.68 %  share=  71.5 %  qos=0
+[t=   11s] URLLC offered=   0.099 Mbps  tput=   0.127 Mbps  lat=    3.02 ms  loss=   0.00 %  share=  19.0 %  qos=1
+[t=   11s]  mMTC offered=   0.048 Mbps  tput=   0.061 Mbps  lat=    3.02 ms  loss=   0.00 %  share=   9.5 %  qos=1
+[t=   12s]  eMBB offered=  49.997 Mbps  tput=  36.385 Mbps  lat=    4.92 ms  loss=  28.65 %  share=  81.5 %  qos=0
+[t=   12s] URLLC offered=   0.101 Mbps  tput=   0.129 Mbps  lat=    3.02 ms  loss=   0.00 %  share=  12.3 %  qos=1
+[t=   12s]  mMTC offered=   0.048 Mbps  tput=   0.061 Mbps  lat=    3.03 ms  loss=   0.00 %  share=   6.2 %  qos=1
+[t=   13s]  eMBB offered=  49.997 Mbps  tput=  36.545 Mbps  lat=    5.05 ms  loss=  28.34 %  share=  85.0 %  qos=0
+[t=   13s] URLLC offered=   0.099 Mbps  tput=   0.127 Mbps  lat=    3.02 ms  loss=   0.00 %  share=  10.0 %  qos=1
+[t=   13s]  mMTC offered=   0.048 Mbps  tput=   0.061 Mbps  lat=    3.03 ms  loss=   0.00 %  share=   5.0 %  qos=1
+[t=   14s]  eMBB offered=  49.997 Mbps  tput=  36.511 Mbps  lat=    5.05 ms  loss=  28.41 %  share=  85.0 %  qos=0
+[t=   14s] URLLC offered=   0.101 Mbps  tput=   0.129 Mbps  lat=    3.02 ms  loss=   0.00 %  share=  10.0 %  qos=1
+[t=   14s]  mMTC offered=   0.056 Mbps  tput=   0.072 Mbps  lat=    3.03 ms  loss=   0.00 %  share=   5.0 %  qos=1
+[t=   15s]  eMBB offered=  49.997 Mbps  tput=  36.545 Mbps  lat=    5.05 ms  loss=  28.34 %  share=  85.0 %  qos=0
+[t=   15s] URLLC offered=   0.099 Mbps  tput=   0.127 Mbps  lat=    3.02 ms  loss=   0.00 %  share=  10.0 %  qos=1
+[t=   15s]  mMTC offered=   0.048 Mbps  tput=   0.061 Mbps  lat=    3.03 ms  loss=   0.00 %  share=   5.0 %  qos=1
+[t=   16s]  eMBB offered=  49.997 Mbps  tput=  36.523 Mbps  lat=    5.05 ms  loss=  28.38 %  share=  85.0 %  qos=0
+[t=   16s] URLLC offered=   0.101 Mbps  tput=   0.129 Mbps  lat=    3.02 ms  loss=   0.00 %  share=  10.0 %  qos=1
+[t=   16s]  mMTC offered=   0.048 Mbps  tput=   0.061 Mbps  lat=    3.03 ms  loss=   0.00 %  share=   5.0 %  qos=1
+[t=   17s]  eMBB offered=  50.019 Mbps  tput=  36.545 Mbps  lat=    5.05 ms  loss=  28.37 %  share=  85.0 %  qos=0
+[t=   17s] URLLC offered=   0.099 Mbps  tput=   0.127 Mbps  lat=    3.02 ms  loss=   0.00 %  share=  10.0 %  qos=1
+[t=   17s]  mMTC offered=   0.048 Mbps  tput=   0.061 Mbps  lat=    3.03 ms  loss=   0.00 %  share=   5.0 %  qos=1
+[t=   18s]  eMBB offered=  49.997 Mbps  tput=  36.523 Mbps  lat=    5.05 ms  loss=  28.38 %  share=  85.0 %  qos=0
+[t=   18s] URLLC offered=   0.101 Mbps  tput=   0.129 Mbps  lat=    3.02 ms  loss=   0.00 %  share=  10.0 %  qos=1
+[t=   18s]  mMTC offered=   0.056 Mbps  tput=   0.072 Mbps  lat=    3.03 ms  loss=   0.00 %  share=   5.0 %  qos=1
+[t=   19s]  eMBB offered=  49.997 Mbps  tput=  36.534 Mbps  lat=    5.05 ms  loss=  28.36 %  share=  85.0 %  qos=0
+[t=   19s] URLLC offered=   0.099 Mbps  tput=   0.127 Mbps  lat=    3.02 ms  loss=   0.00 %  share=  10.0 %  qos=1
+[t=   19s]  mMTC offered=   0.048 Mbps  tput=   0.061 Mbps  lat=    3.03 ms  loss=   0.00 %  share=   5.0 %  qos=1
+[t=   20s]  eMBB offered=  50.019 Mbps  tput=  27.063 Mbps  lat=    8.08 ms  loss=  46.95 %  share=  85.0 %  qos=0
+[t=   20s] URLLC offered=   5.000 Mbps  tput=   6.384 Mbps  lat=    2.79 ms  loss=   0.26 %  share=  10.0 %  qos=1
+[t=   20s]  mMTC offered=   0.056 Mbps  tput=   0.072 Mbps  lat=    3.03 ms  loss=   0.00 %  share=   5.0 %  qos=1
+[t=   21s]  eMBB offered=  49.997 Mbps  tput=  27.041 Mbps  lat=    8.10 ms  loss=  46.98 %  share=  83.0 %  qos=0
+[t=   21s] URLLC offered=   5.000 Mbps  tput=   6.400 Mbps  lat=    2.79 ms  loss=   0.00 %  share=  12.0 %  qos=1
+[t=   21s]  mMTC offered=   0.048 Mbps  tput=   0.061 Mbps  lat=    3.03 ms  loss=   0.00 %  share=   5.0 %  qos=1
+[t=   22s]  eMBB offered=  49.997 Mbps  tput=  27.052 Mbps  lat=    8.11 ms  loss=  46.95 %  share=  83.0 %  qos=0
+[t=   22s] URLLC offered=   5.000 Mbps  tput=   6.400 Mbps  lat=    2.79 ms  loss=   0.00 %  share=  12.0 %  qos=1
+[t=   22s]  mMTC offered=   0.048 Mbps  tput=   0.061 Mbps  lat=    3.03 ms  loss=   0.00 %  share=   5.0 %  qos=1
+[t=   23s]  eMBB offered=  49.997 Mbps  tput=  27.052 Mbps  lat=    8.10 ms  loss=  46.95 %  share=  83.0 %  qos=0
+[t=   23s] URLLC offered=   5.000 Mbps  tput=   6.400 Mbps  lat=    2.79 ms  loss=   0.00 %  share=  12.0 %  qos=1
+[t=   23s]  mMTC offered=   0.048 Mbps  tput=   0.061 Mbps  lat=    3.03 ms  loss=   0.00 %  share=   5.0 %  qos=1
+[t=   24s]  eMBB offered=  49.997 Mbps  tput=  27.029 Mbps  lat=    8.11 ms  loss=  47.00 %  share=  83.0 %  qos=0
+[t=   24s] URLLC offered=   5.000 Mbps  tput=   6.400 Mbps  lat=    2.79 ms  loss=   0.00 %  share=  12.0 %  qos=1
+[t=   24s]  mMTC offered=   0.056 Mbps  tput=   0.072 Mbps  lat=    3.03 ms  loss=   0.00 %  share=   5.0 %  qos=1
+[t=   25s]  eMBB offered=  49.997 Mbps  tput=  27.041 Mbps  lat=    8.10 ms  loss=  46.98 %  share=  83.0 %  qos=0
+[t=   25s] URLLC offered=   5.000 Mbps  tput=   6.400 Mbps  lat=    2.79 ms  loss=   0.00 %  share=  12.0 %  qos=1
+[t=   25s]  mMTC offered=   0.048 Mbps  tput=   0.061 Mbps  lat=    3.03 ms  loss=   0.00 %  share=   5.0 %  qos=1
+[t=   26s]  eMBB offered=  49.997 Mbps  tput=  27.052 Mbps  lat=    8.10 ms  loss=  46.95 %  share=  83.0 %  qos=0
+[t=   26s] URLLC offered=   5.000 Mbps  tput=   6.400 Mbps  lat=    2.79 ms  loss=   0.00 %  share=  12.0 %  qos=1
+[t=   26s]  mMTC offered=   0.048 Mbps  tput=   0.061 Mbps  lat=    3.03 ms  loss=   0.00 %  share=   5.0 %  qos=1
+[t=   27s]  eMBB offered=  50.019 Mbps  tput=  27.041 Mbps  lat=    8.10 ms  loss=  47.00 %  share=  83.0 %  qos=0
+[t=   27s] URLLC offered=   5.000 Mbps  tput=   6.400 Mbps  lat=    2.79 ms  loss=   0.00 %  share=  12.0 %  qos=1
+[t=   27s]  mMTC offered=   0.048 Mbps  tput=   0.061 Mbps  lat=    3.03 ms  loss=   0.00 %  share=   5.0 %  qos=1
+[t=   28s]  eMBB offered=  49.997 Mbps  tput=  27.041 Mbps  lat=    8.10 ms  loss=  46.98 %  share=  83.0 %  qos=0
+[t=   28s] URLLC offered=   5.000 Mbps  tput=   6.400 Mbps  lat=    2.79 ms  loss=   0.00 %  share=  12.0 %  qos=1
+[t=   28s]  mMTC offered=   0.056 Mbps  tput=   0.072 Mbps  lat=    3.03 ms  loss=   0.00 %  share=   5.0 %  qos=1
+[t=   29s]  eMBB offered=  49.997 Mbps  tput=  27.052 Mbps  lat=    8.11 ms  loss=  46.95 %  share=  83.0 %  qos=0
+[t=   29s] URLLC offered=   5.000 Mbps  tput=   6.400 Mbps  lat=    2.79 ms  loss=   0.00 %  share=  12.0 %  qos=1
+[t=   29s]  mMTC offered=   0.048 Mbps  tput=   0.061 Mbps  lat=    3.03 ms  loss=   0.00 %  share=   5.0 %  qos=1
+[t=   30s]  eMBB offered=  20.003 Mbps  tput=  20.483 Mbps  lat=    3.88 ms  loss=   0.00 %  share=  83.0 %  qos=1
+[t=   30s] URLLC offered=   5.000 Mbps  tput=   6.400 Mbps  lat=    2.73 ms  loss=   0.00 %  share=  12.0 %  qos=1
+[t=   30s]  mMTC offered=   5.000 Mbps  tput=   3.253 Mbps  lat=    2.74 ms  loss=  49.17 %  share=   5.0 %  qos=0
+[t=   31s]  eMBB offered=  20.003 Mbps  tput=  17.684 Mbps  lat=   10.69 ms  loss=  13.33 %  share=  73.0 %  qos=0
+[t=   31s] URLLC offered=   5.000 Mbps  tput=   6.402 Mbps  lat=    2.77 ms  loss=   0.00 %  share=  14.9 %  qos=1
+[t=   31s]  mMTC offered=   5.000 Mbps  tput=   6.388 Mbps  lat=    2.84 ms  loss=   0.19 %  share=  12.1 %  qos=1
+[t=   32s]  eMBB offered=  20.003 Mbps  tput=  17.684 Mbps  lat=   10.94 ms  loss=  13.33 %  share=  66.7 %  qos=0
+[t=   32s] URLLC offered=   5.000 Mbps  tput=   6.400 Mbps  lat=    2.77 ms  loss=   0.00 %  share=  16.7 %  qos=1
+[t=   32s]  mMTC offered=   5.000 Mbps  tput=   6.400 Mbps  lat=    2.84 ms  loss=   0.00 %  share=  16.7 %  qos=1
+[t=   33s]  eMBB offered=  20.003 Mbps  tput=  17.684 Mbps  lat=   10.94 ms  loss=  13.33 %  share=  66.7 %  qos=0
+[t=   33s] URLLC offered=   5.000 Mbps  tput=   6.400 Mbps  lat=    2.77 ms  loss=   0.00 %  share=  16.7 %  qos=1
+[t=   33s]  mMTC offered=   5.000 Mbps  tput=   6.400 Mbps  lat=    2.84 ms  loss=   0.00 %  share=  16.7 %  qos=1
+[t=   34s]  eMBB offered=  20.003 Mbps  tput=  17.673 Mbps  lat=   10.96 ms  loss=  13.38 %  share=  66.7 %  qos=0
+[t=   34s] URLLC offered=   5.000 Mbps  tput=   6.400 Mbps  lat=    2.77 ms  loss=   0.00 %  share=  16.7 %  qos=1
+[t=   34s]  mMTC offered=   5.000 Mbps  tput=   6.400 Mbps  lat=    2.84 ms  loss=   0.00 %  share=  16.7 %  qos=1
+[t=   35s]  eMBB offered=  20.003 Mbps  tput=  17.684 Mbps  lat=   10.95 ms  loss=  13.33 %  share=  66.7 %  qos=0
+[t=   35s] URLLC offered=   5.000 Mbps  tput=   6.400 Mbps  lat=    2.77 ms  loss=   0.00 %  share=  16.7 %  qos=1
+[t=   35s]  mMTC offered=   5.000 Mbps  tput=   6.400 Mbps  lat=    2.84 ms  loss=   0.00 %  share=  16.7 %  qos=1
+[t=   36s]  eMBB offered=  19.981 Mbps  tput=  17.684 Mbps  lat=   10.95 ms  loss=  13.23 %  share=  66.7 %  qos=0
+[t=   36s] URLLC offered=   5.000 Mbps  tput=   6.400 Mbps  lat=    2.77 ms  loss=   0.00 %  share=  16.7 %  qos=1
+[t=   36s]  mMTC offered=   5.000 Mbps  tput=   6.400 Mbps  lat=    2.84 ms  loss=   0.00 %  share=  16.7 %  qos=1
+[t=   37s]  eMBB offered=  20.003 Mbps  tput=  17.684 Mbps  lat=   10.94 ms  loss=  13.33 %  share=  66.6 %  qos=0
+[t=   37s] URLLC offered=   5.000 Mbps  tput=   6.400 Mbps  lat=    2.77 ms  loss=   0.00 %  share=  16.7 %  qos=1
+[t=   37s]  mMTC offered=   5.000 Mbps  tput=   6.400 Mbps  lat=    2.84 ms  loss=   0.00 %  share=  16.7 %  qos=1
+[t=   38s]  eMBB offered=  20.003 Mbps  tput=  17.684 Mbps  lat=   10.94 ms  loss=  13.33 %  share=  66.7 %  qos=0
+[t=   38s] URLLC offered=   5.000 Mbps  tput=   6.400 Mbps  lat=    2.77 ms  loss=   0.00 %  share=  16.7 %  qos=1
+[t=   38s]  mMTC offered=   5.000 Mbps  tput=   6.400 Mbps  lat=    2.84 ms  loss=   0.00 %  share=  16.7 %  qos=1
+[t=   39s]  eMBB offered=  20.003 Mbps  tput=  17.673 Mbps  lat=   10.93 ms  loss=  13.38 %  share=  66.7 %  qos=0
+[t=   39s] URLLC offered=   5.000 Mbps  tput=   6.400 Mbps  lat=    2.77 ms  loss=   0.00 %  share=  16.7 %  qos=1
+[t=   39s]  mMTC offered=   5.000 Mbps  tput=   6.400 Mbps  lat=    2.84 ms  loss=   0.00 %  share=  16.7 %  qos=1
+[t=   40s]  eMBB offered=  80.013 Mbps  tput=   7.780 Mbps  lat=   12.96 ms  loss=  90.47 %  share=  66.7 %  qos=0
+[t=   40s] URLLC offered=  10.000 Mbps  tput=  10.776 Mbps  lat=    4.65 ms  loss=  15.82 %  share=  16.7 %  qos=0
+[t=   40s]  mMTC offered=  10.000 Mbps  tput=  10.856 Mbps  lat=    2.73 ms  loss=  15.18 %  share=  16.7 %  qos=0
+[t=   41s]  eMBB offered=  79.990 Mbps  tput=   5.392 Mbps  lat=   17.18 ms  loss=  93.39 %  share=  56.7 %  qos=0
+[t=   41s] URLLC offered=  10.000 Mbps  tput=  11.490 Mbps  lat=   15.00 ms  loss=  10.23 %  share=  22.9 %  qos=0
+[t=   41s]  mMTC offered=  10.000 Mbps  tput=  12.791 Mbps  lat=    2.79 ms  loss=   0.07 %  share=  20.4 %  qos=1
+[t=   42s]  eMBB offered=  80.013 Mbps  tput=   5.369 Mbps  lat=   17.22 ms  loss=  93.42 %  share=  47.0 %  qos=0
+[t=   42s] URLLC offered=  10.000 Mbps  tput=  11.492 Mbps  lat=   16.03 ms  loss=  10.22 %  share=  29.0 %  qos=0
+[t=   42s]  mMTC offered=  10.000 Mbps  tput=  12.800 Mbps  lat=    2.79 ms  loss=   0.00 %  share=  24.0 %  qos=1
+[t=   43s]  eMBB offered=  79.990 Mbps  tput=   5.381 Mbps  lat=   17.22 ms  loss=  93.41 %  share=  47.0 %  qos=0
+[t=   43s] URLLC offered=  10.000 Mbps  tput=  11.493 Mbps  lat=   16.03 ms  loss=  10.21 %  share=  29.0 %  qos=0
+[t=   43s]  mMTC offered=  10.000 Mbps  tput=  12.800 Mbps  lat=    2.79 ms  loss=   0.00 %  share=  24.0 %  qos=1
+[t=   44s]  eMBB offered=  80.013 Mbps  tput=   5.381 Mbps  lat=   17.22 ms  loss=  93.41 %  share=  47.0 %  qos=0
+[t=   44s] URLLC offered=  10.000 Mbps  tput=  11.492 Mbps  lat=   16.03 ms  loss=  10.22 %  share=  29.0 %  qos=0
+[t=   44s]  mMTC offered=  10.000 Mbps  tput=  12.800 Mbps  lat=    2.79 ms  loss=   0.00 %  share=  24.0 %  qos=1
+[t=   45s]  eMBB offered=  79.990 Mbps  tput=   5.381 Mbps  lat=   17.22 ms  loss=  93.41 %  share=  47.0 %  qos=0
+[t=   45s] URLLC offered=  10.000 Mbps  tput=  11.492 Mbps  lat=   16.03 ms  loss=  10.22 %  share=  29.0 %  qos=0
+[t=   45s]  mMTC offered=  10.000 Mbps  tput=  12.800 Mbps  lat=    2.79 ms  loss=   0.00 %  share=  24.0 %  qos=1
+[t=   46s]  eMBB offered=  79.990 Mbps  tput=   5.381 Mbps  lat=   17.22 ms  loss=  93.41 %  share=  47.0 %  qos=0
+[t=   46s] URLLC offered=  10.000 Mbps  tput=  11.493 Mbps  lat=   16.03 ms  loss=  10.21 %  share=  29.0 %  qos=0
+[t=   46s]  mMTC offered=  10.000 Mbps  tput=  12.800 Mbps  lat=    2.79 ms  loss=   0.00 %  share=  24.0 %  qos=1
+[t=   47s]  eMBB offered=  80.013 Mbps  tput=   5.381 Mbps  lat=   17.22 ms  loss=  93.41 %  share=  47.0 %  qos=0
+[t=   47s] URLLC offered=  10.000 Mbps  tput=  11.492 Mbps  lat=   16.03 ms  loss=  10.22 %  share=  29.0 %  qos=0
+[t=   47s]  mMTC offered=  10.000 Mbps  tput=  12.800 Mbps  lat=    2.79 ms  loss=   0.00 %  share=  24.0 %  qos=1
+[t=   48s]  eMBB offered=  79.990 Mbps  tput=   5.369 Mbps  lat=   17.21 ms  loss=  93.42 %  share=  47.0 %  qos=0
+[t=   48s] URLLC offered=  10.000 Mbps  tput=  11.492 Mbps  lat=   16.03 ms  loss=  10.22 %  share=  29.0 %  qos=0
+[t=   48s]  mMTC offered=  10.000 Mbps  tput=  12.800 Mbps  lat=    2.79 ms  loss=   0.00 %  share=  24.0 %  qos=1
+[t=   49s]  eMBB offered=  80.013 Mbps  tput=   5.381 Mbps  lat=   17.22 ms  loss=  93.41 %  share=  47.0 %  qos=0
+[t=   49s] URLLC offered=  10.000 Mbps  tput=  11.493 Mbps  lat=   16.03 ms  loss=  10.21 %  share=  29.0 %  qos=0
+[t=   49s]  mMTC offered=  10.000 Mbps  tput=  12.800 Mbps  lat=    2.79 ms  loss=   0.00 %  share=  24.0 %  qos=1
+
+===== SUMMARY (dynamic, seed 1) =====
+eMBB: tput=19.356 Mbps lat=7.18 ms loss=54.82 % jitter=0.305 ms offered=187505 pkts policed=65028 rx=84715 avgShare=68.9 % qos=0.220
+URLLC: tput=4.895 Mbps lat=8.41 ms loss=5.34 % jitter=0.232 ms offered=252500 pkts policed=1879 rx=239017 avgShare=18.7 % qos=0.800
+mMTC: tput=3.776 Mbps lat=2.80 ms loss=2.64 % jitter=0.243 ms offered=189388 pkts policed=4960 rx=184396 avgShare=12.4 % qos=0.960
+
+Per-UE sink check (bytes received):
+  sink 0 (eMBB): 53191600 B
+  sink 1 (eMBB): 66068800 B
+  sink 2 (URLLC): 12342600 B
+  sink 3 (URLLC): 12681400 B
+  sink 4 (mMTC): 2018500 B
+  sink 5 (mMTC): 1881600 B
+  sink 6 (mMTC): 2018600 B
+  sink 7 (mMTC): 2018600 B
+  sink 8 (mMTC): 1957100 B
+  sink 9 (mMTC): 2018600 B
+  sink 10 (mMTC): 1957200 B
+  sink 11 (mMTC): 1957000 B
+  sink 12 (mMTC): 1843900 B
+  sink 13 (mMTC): 2018500 B
+<font color="#8AE234"><b>vboxuser@Ubuntu18</b></font>:<font color="#729FCF"><b>~/ns-3-dev</b></font>$ python3 $P/analysis/analyze_results.py
+                    throughput_mbps  offered_mbps
+mode    seed slice                               
+dynamic 1    URLLC       244.753408      202.0000
+             mMTC        188.821504      151.5104
+static  1    URLLC       258.524160      202.0000
+VALIDATION ERROR: received more than offered over a full run: results are inconsistent
+<font color="#8AE234"><b>vboxuser@Ubuntu18</b></font>:<font color="#729FCF"><b>~/ns-3-dev</b></font>$ python3 $P/analysis/analyze_results.py
+Header correction (payload / (payload + 28 B)): eMBB x0.9804, URLLC x0.7812, mMTC x0.7812
+Validation passed: 300 time-series rows, seeds: [1]
+saved /home/vboxuser/5g-network-slicing/plots/plot1_throughput_vs_time.png
+saved /home/vboxuser/5g-network-slicing/plots/plot2_latency_vs_time.png
+saved /home/vboxuser/5g-network-slicing/plots/plot3_packet_loss_vs_time.png
+saved /home/vboxuser/5g-network-slicing/plots/plot4_resource_allocation_vs_time.png
+saved /home/vboxuser/5g-network-slicing/plots/plot5_static_vs_dynamic_throughput.png
+saved /home/vboxuser/5g-network-slicing/plots/plot6_static_vs_dynamic_latency.png
+saved /home/vboxuser/5g-network-slicing/plots/plot7_static_vs_dynamic_packet_loss.png
+saved /home/vboxuser/5g-network-slicing/plots/plot8_qos_satisfaction_per_phase.png
+saved /home/vboxuser/5g-network-slicing/plots/plot8b_qos_satisfaction_overall.png
+saved /home/vboxuser/5g-network-slicing/results/summary_statistics.csv
+
+=== Mean over seeds (per run totals) ===
+               avg_throughput_mbps  avg_latency_ms  packet_loss_percent  jitter_ms  avg_resource_percent  avg_utilization_percent  qos_satisfaction_ratio
+slice mode                                                                                                                                               
+URLLC dynamic                3.824           8.413                5.340      0.232                18.749                   43.605                    0.80
+      static                 4.039           2.820                0.014      0.225                30.000                   26.930                    1.00
+eMBB  dynamic               18.976           7.180               54.820      0.305                68.883                   51.447                    0.22
+      static                19.105           5.785               54.514      0.298                60.000                   63.681                    0.20
+mMTC  dynamic                2.950           2.803                2.636      0.243                12.367                   31.521                    0.96
+      static                 2.032           2.789               32.946      0.201                10.000                   40.638                    0.80
+
+=== Dynamic minus static (positive throughput/qos = better; negative latency/loss = better) ===
+eMBB: avg_throughput_mbps=-0.128, avg_latency_ms=+1.396, packet_loss_percent=+0.306, jitter_ms=+0.006, avg_resource_percent=+8.883, avg_utilization_percent=-12.234, qos_satisfaction_ratio=+0.020
+URLLC: avg_throughput_mbps=-0.215, avg_latency_ms=+5.593, packet_loss_percent=+5.326, jitter_ms=+0.007, avg_resource_percent=-11.251, avg_utilization_percent=+16.675, qos_satisfaction_ratio=-0.200
+mMTC: avg_throughput_mbps=+0.918, avg_latency_ms=+0.014, packet_loss_percent=-30.310, jitter_ms=+0.042, avg_resource_percent=+2.367, avg_utilization_percent=-9.116, qos_satisfaction_ratio=+0.160
+<font color="#8AE234"><b>vboxuser@Ubuntu18</b></font>:<font color="#729FCF"><b>~/ns-3-dev</b></font>$ 
+</pre>

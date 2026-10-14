@@ -1,0 +1,4 @@
+mode,seed,slice,avg_throughput_mbps,avg_offered_mbps,avg_latency_ms,packet_loss_percent,jitter_ms,tx_packets,rx_packets,offered_packets,policed_packets,avg_resource_percent,avg_utilization_percent,qos_satisfaction_ratio
+static,1,eMBB,19.486602,42.001120,5.784696,54.514280,0.298491,107247,85288,187505,80258,60.000,64.955,0.2000
+static,1,URLLC,5.170483,4.040000,2.820490,0.013861,0.225019,252500,252465,252500,0,30.000,34.470,1.0000
+static,1,mMTC,2.600796,3.030208,2.789152,32.946121,0.201096,127007,126992,189388,62381,10.000,52.016,0.8000

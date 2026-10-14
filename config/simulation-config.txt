@@ -1,0 +1,15 @@
+# Traffic phases for dynamic-slicing.cc.  Pass with:  --configFile=<path to this file>
+# Format:  phase = start_s, embb_Mbps, urllc_Mbps, mmtc_Mbps
+# start_s is relative to the traffic start time; rates are AGGREGATE per slice and are
+# divided equally among the UEs of that slice.
+#
+# Other parameters are set on the command line (./ns3 run "dynamic-slicing --PrintHelp").
+# Defaults: numEmbbUes=2 numUrllcUes=2 numMmtcUes=10 simTime=50 seed=1
+#           shareEmbb=60 shareUrllc=30 shareMmtc=10 cellCapacityMbps=50
+#           urllcMaxLatMs=10 urllcMaxLossPct=1 embbMinFrac=0.9 mmtcMaxLossPct=5
+#           portEmbb=5000 portUrllc=6000 portMmtc=7000
+phase = 0,  10, 0.1, 0.05   # 0-10 s   normal
+phase = 10, 50, 0.1, 0.05   # 10-20 s  eMBB spike
+phase = 20, 50, 5,   0.05   # 20-30 s  URLLC spike
+phase = 30, 20, 5,   5      # 30-40 s  mMTC spike
+phase = 40, 80, 10,  10     # 40-50 s  heavy mixed

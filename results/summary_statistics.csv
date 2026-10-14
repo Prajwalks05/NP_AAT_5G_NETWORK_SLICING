@@ -1,0 +1,7 @@
+mode,slice,avg_throughput_mbps_mean,avg_throughput_mbps_std,avg_latency_ms_mean,avg_latency_ms_std,packet_loss_percent_mean,packet_loss_percent_std,jitter_ms_mean,jitter_ms_std,avg_resource_percent_mean,avg_resource_percent_std,avg_utilization_percent_mean,avg_utilization_percent_std,qos_satisfaction_ratio_mean,qos_satisfaction_ratio_std
+dynamic,URLLC,3.824271875,,8.41308,,5.339802,,0.232237,,18.749000000000002,,43.6046875,,0.8,
+dynamic,eMBB,18.97615980392157,,7.180388000000001,,54.819871,,0.304551,,68.883,,51.44705882352942,,0.22,
+dynamic,mMTC,2.9503359375000002,,2.8029740000000003,,2.635859,,0.243011,,12.367,,31.521093750000002,,0.96,
+static,URLLC,4.03943984375,,2.82049,,0.013861000000000002,,0.225019,,30.0,,26.9296875,,1.0,
+static,eMBB,19.10451176470588,,5.784696,,54.51428000000001,,0.298491,,60.0,,63.681372549019606,,0.2,
+static,mMTC,2.0318718749999998,,2.789152,,32.946121000000005,,0.201096,,10.0,,40.6375,,0.8,
