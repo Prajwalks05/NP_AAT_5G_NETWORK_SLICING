@@ -1,11 +1,4 @@
 # 5G Network Slicing with Dynamic Traffic using NS-3
-
-> **Status: NOT yet compiled or run.** The code was written against the **ns-3.38 + 5G-LENA (nr) v2.4**
-> API without access to those repositories. `results/` and `plots/` are empty on purpose: no numbers have
-> been fabricated. Follow "Phase 0" below first; if a header check fails, adapt the listed call to the
-> installed version (compare with `contrib/nr/examples/cttc-nr-demo.cc`).
-> The Python analysis was exercised on synthetic data to test the code path only.
-
 ## Objective
 Show quantitatively whether **dynamic** slice resource allocation improves QoS and resource
 utilisation, compared with **static** allocation, when eMBB / URLLC / mMTC traffic changes over time.
